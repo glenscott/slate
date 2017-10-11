@@ -252,6 +252,11 @@
   -H <span class="s2">"Authorization: meowmeowmeow"</span>
 </code></pre>
 <blockquote>
+<p>A valid response has the following code:</p>
+</blockquote>
+<pre class="highlight http tab-http"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+</code></pre>
+<blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="s2">"4"</span><span class="p">,</span><span class="s2">"5"</span><span class="p">,</span><span class="s2">"6"</span><span class="p">,</span><span class="s2">"8"</span><span class="p">]</span><span class="w">
@@ -290,7 +295,12 @@
 <td>Maximum number of downloads to return.</td>
 </tr>
 </tbody></table>
-<h2 id='add-downloads-to-the-list'>Add downloads to the list</h2><h3 id='http-request-2'>HTTP Request</h3>
+<h2 id='add-downloads-to-the-list'>Add downloads to the list</h2>
+<blockquote>
+<p>A valid response has the following code:</p>
+</blockquote>
+<pre class="highlight http tab-http"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">201</span> <span class="ne">Created</span>
+</code></pre><h3 id='http-request-2'>HTTP Request</h3>
 <p><code>POST https://api.audiomack.com/v1/user/downloads</code></p>
 
 <aside class="notice">
@@ -310,7 +320,12 @@
 <td>Either a single music ID, or a comma-separated list of music IDs that should be added to the user&#39;s download list</td>
 </tr>
 </tbody></table>
-<h2 id='remove-downloads-from-the-list'> Remove downloads from the list</h2><h3 id='http-request-3'> HTTP Request</h3>
+<h2 id='remove-downloads-from-the-list'> Remove downloads from the list</h2>
+<blockquote>
+<p>A valid response has the following code:</p>
+</blockquote>
+<pre class="highlight http tab-http"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+</code></pre><h3 id='http-request-3'> HTTP Request</h3>
 <p><code>DELETE https://api.audiomack.com/v1/user/downloads/&lt;ID&gt;</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
