@@ -26,6 +26,12 @@ curl "https://api.audiomack.com/v1/user/downloads"
   -H "Authorization: meowmeowmeow"
 ```
 
+> A valid response has the following code:
+
+```http
+HTTP/1.1 200 OK
+```
+
 > The above command returns JSON structured like this:
 
 ```json
@@ -51,6 +57,12 @@ limit | 20 | Maximum number of downloads to return.
 
 ## Add downloads to the list
 
+> A valid response has the following code:
+
+```http
+HTTP/1.1 201 Created
+```
+
 ### HTTP Request
 
 `POST https://api.audiomack.com/v1/user/downloads`
@@ -66,6 +78,12 @@ Parameter | Default | Description
 music_id | | Either a single music ID, or a comma-separated list of music IDs that should be added to the user's download list
 
 ## Remove downloads from the list
+
+> A valid response has the following code:
+
+```http
+HTTP/1.1 200 OK
+```
 
 ### HTTP Request
 
