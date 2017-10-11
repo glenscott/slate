@@ -93,6 +93,6 @@ HTTP/1.1 200 OK
 
 Parameter | Description
 --------- | -----------
-ID | Either a single music ID, or a comma-separated list of music IDs that should be added to the user's download list
+ID | Either a single music ID, or a comma-separated list of music IDs that should be removed from the user's download list
 
 
